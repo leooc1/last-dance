@@ -1,0 +1,23 @@
+.border-qr {
+    position: relative;
+}
+
+.border-qr::after,
+.border-qr::before {
+    position: absolute;
+    content: '';
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 105%;
+    height: 105%;
+    z-index: -1;
+}
+
+.border-qr::after {
+    background: linear-gradient(45deg, black 15%, transparent 15%, transparent 85%, black 85%);
+}
+
+.border-qr::before {
+    background: linear-gradient(135deg, black 15%, transparent 15%, transparent 85%, black 85%);
+}
